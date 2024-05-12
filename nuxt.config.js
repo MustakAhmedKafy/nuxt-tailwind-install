@@ -5,6 +5,12 @@
 // });
 export default {
   devtools: { enabled: true },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
   css: ["~/assets/css/styles.css"],
 };
 // nuxt.config.js

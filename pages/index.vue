@@ -1,5 +1,7 @@
 <template>
-  <div class="container mx-auto p-8">
+  <Banner class="mb-10"/>
+  <div class="container px-20 ">
+    <h1 class="text-center py-8 text-4xl text-neutral-800">Our Hot Products</h1>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
       <NuxtLink
         v-for="(product, index) in products"

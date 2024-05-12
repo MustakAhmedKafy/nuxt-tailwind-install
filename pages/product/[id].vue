@@ -14,10 +14,13 @@ import { ref, onMounted } from "vue";
 
 const product = ref({});
 
+const route = useRoute();
+
 const fetchProductDetails = async () => {
   try {
-    const productId = $route.params.id;
-    const response = await fetch(`api/product/${product.id}`);
+    const productId = route.params.id;
+    console.log(route);
+    const response = await fetch(`api/product/${productId}`);
     if (!response.ok) {
       throw new Error("Failed to fetch product details");
     }
@@ -28,7 +31,9 @@ const fetchProductDetails = async () => {
   }
 };
 
-onMounted(fetchProductDetails);
+onMounted(async () => {
+  await fetchProductDetails();
+});
 </script>
 
 <!-- <script setup>

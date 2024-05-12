@@ -5,8 +5,8 @@
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <div class="flex items-center">
-            <!-- <img src="logo.png" alt="Logo" class="h-8 mr-2"> -->
-            <h1 class="text-white text-lg font-semibold">Your Logo</h1>
+           <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" >
+            <h1 class="text-white text-lg font-semibold ms-3"> Your Logo</h1>
           </div>
           <!-- Menu -->
 
